@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student Enrolment Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <form
+          id="studform"
+          method="post"
+          class="signup-form"
+          action="#"
+          style="width: 75%; padding-left: 25%"
+        >
+          <div>
+            <fieldset>
+              <h2 class="m-4">Student Enrollment Form</h2>
+
+              <div class="mb-3">
+                <label for="rollno" class="form-label">Roll No.</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name="rollno"
+                  id="rollno"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="name">Full Name</label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="class" class="form-label">Class</label>
+                <input
+                  type="text"
+                  name="class"
+                  class="form-control"
+                  id="class"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="BirthDate" class="form-label">Birth Date</label>
+                <input
+                  type="text"
+                  id="BirthDate"
+                  name="BirthDate"
+                  class="form-control datepicker"
+                  placeholder=""
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="address" class="form-label"> Address</label>
+                <input
+                  type="text"
+                  name="address"
+                  class="form-control"
+                  id="address"
+                />
+
+                <div class="mb-3">
+                  <label for="EnrollmentDate" class="form-label"
+                    >Enrollment Date</label
+                  >
+                  <input
+                    type="text"
+                    id="EnrollmentDate"
+                    name="EnrollmentDate"
+                    class="form-control datepicker"
+                    placeholder=""
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3 text-center">
+                <input
+                  type="button"
+                  name="savebutton"
+                  id=" savebutton"
+                  class="l btn btn-primary mx-2"
+                  placeholder="submit"
+                  value="Submit"
+                  onclick="RegisterStudent();"
+                />
+
+                <input
+                  type="button"
+                  name="update"
+                  id="update"
+                  class=" btn btn-warning mx-2"
+                  value="Update"
+                  onclick="UpdateStudent()"
+                />
+
+                <input
+                  type="button"
+                  name="reset"
+                  id="reset"
+                  class=" btn btn-danger mx-2"
+                  value="Reset"
+                  onclick="resetForm()"
+                />
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
